@@ -18,8 +18,9 @@ class Player extends PositionComponent {
   @override
   void update(double dt) {
     super.update(dt);
-    // position+=_velocity*dt;
-    // _velocity.y += _gravity*dt;
+
+    position += _velocity * dt;
+    _velocity.y += _gravity * dt;
   }
 
   @override
